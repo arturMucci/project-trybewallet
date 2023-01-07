@@ -65,12 +65,13 @@ class Table extends Component {
                     isDisabled={ false }
                     labelName="Edit"
                     id={ each.id }
-                    testid="edit-btn"
+                    testId="edit-btn"
                     handleButton={ this.handleEdit }
                   />
                   <Button
                     isDisabled={ false }
                     labelName="Excluir"
+                    testId="delete-btn"
                     id={ each.id }
                     handleButton={ this.handleDelete }
                   />
