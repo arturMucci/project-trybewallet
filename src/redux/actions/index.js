@@ -1,4 +1,3 @@
-// Coloque aqui suas actions
 import getCurrentIssCurrencies from '../../components/services/issApi';
 
 export const SAVE_EMAIL = 'SAVE_EMAIL';
@@ -27,6 +26,22 @@ export const ACTION_ADD_NEW_EXPENSE = async (dispatch, payload) => {
       exchangeRates,
       value: payload.value,
     },
+  });
+};
+
+export const SAVE_IDTOEDIT = 'SAVE_IDTOEDIT';
+export const ACTION_SAVE_IDTOEDIT = (dispatch, payload) => {
+  dispatch({
+    type: SAVE_IDTOEDIT,
+    payload,
+  });
+};
+
+export const DELETE_EXPENSE = 'DELETE_EXPENSE';
+export const ACTION_DELETE_EXPENSE = (dispatch, payload) => {
+  dispatch({
+    type: DELETE_EXPENSE,
+    payload,
   });
 };
 
